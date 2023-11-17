@@ -51,7 +51,7 @@ contract Assessment {
             Transaction({
                 transactionType: "Deposit",
                 amount: _amount,
-                timestamp: now
+                timestamp: block.timestamp
             })
         );
 
@@ -83,7 +83,7 @@ contract Assessment {
             Transaction({
                 transactionType: "Withdraw",
                 amount: _withdrawAmount,
-                timestamp: now
+                timestamp: block.timestamp
             })
         );
 
