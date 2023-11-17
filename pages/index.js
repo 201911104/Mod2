@@ -171,8 +171,8 @@ export default function HomePage() {
       <div>
         <p>Your Account: {account}</p>
         <p>Your Balance: {balance} ETH</p>
-        <button onClick={deposit}>Deposit 1 ETH</button>
-        <button onClick={withdraw}>Withdraw 1 ETH</button>
+        <button onClick={() => deposit(1)}>Deposit 1 ETH</button>
+        <button onClick={() => withdraw(1)}>Withdraw 1 ETH</button>
          <button onClick={() => deposit(5)}>Deposit 5 ETH</button>
         <button onClick={() => withdraw(5)}>Withdraw 5 ETH</button>
         <p>Gas Price: {gasPrice} Gwei</p>
